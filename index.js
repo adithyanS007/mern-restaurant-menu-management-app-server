@@ -12,10 +12,10 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 
 const corsOptions = {
-  origin: 'http://localhost:3000', // Allow both frontend ports
+  origin: 'http://deepnetsoft-test-client-jekk.vercel.app', // Allow both frontend ports
   methods: ["GET", "POST", "PUT", "DELETE"],
-  allowedHeaders: ["Content-Type"],
-  credentials: false
+  allowedHeaders: ["Content-Type", "Authorization"],
+  credentials: true,
 };
 
 // Use CORS middleware with the specified options
