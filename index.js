@@ -12,7 +12,7 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 
 const corsOptions = {
-  origin: 'http://deepnetsoft-test-client.vercel.app', // Allow both frontend ports
+  origin: 'https://deepnetsoft-test-client.vercel.app', // Correct active frontend URL
   methods: ["GET", "POST", "PUT", "DELETE"],
   allowedHeaders: ["Content-Type", "Authorization"],
   credentials: true,
